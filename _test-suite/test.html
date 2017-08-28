@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Test</title>
-    <style>
-      img{width: 40px; line-height: 40px; display: inline-block; vertical-align: middle} 
-      a{line-height: 40px; display: inline-block; vertical-align: middle; text-decoration: none;}
-      #mocha-report > li > h1{font-family: monospace; background: #fff; color: firebrick; background: #ddd; display: inline-block; margin: 10px; padding: 6px;}
-    </style>
     <link rel="stylesheet" href="./lib/mocha.min.css">
-    
+    <style>
+      img{width: 40px; line-height: 40px; display: inline-block; vertical-align: middle}
+      a{line-height: 40px; display: inline-block; vertical-align: middle; text-decoration: none;}
+
+      #mocha-report > li > h1{font-family: monospace; background: #fff; color: #313a7f; background: #ddd; display: block; margin: 10px; padding: 6px;}
+      #mocha .suite .suite h1{ font-size: 1rem; font-weight: 600; color: #313a7f }
+      #mocha h2, #mocha .test.fail::before {font-size: 16px;}
+      #mocha .test pre.error{ opacity: .5; font-size: 11px;}
+    </style>
   </head>
   <body>
     <div id="mocha"><p><a href="../index.html"><img src="./lib/home-icon.svg"/>Home<span></</a></p></div>
@@ -17,7 +20,9 @@
     <div id="fixtures"></div>
     <script src="./lib/mocha.min.js"></script>
     <script src="./lib/chai.min.js"></script>
-    <script src="../main.js"></script>
+  </body>
+    <script src="../01-isVowel.js"></script>
+    <script src="../02-totals10.js"></script>
     <script>mocha.setup('bdd')</script>
     <script src="./main.test.js"></script>
     <script>mocha.run();</script>
