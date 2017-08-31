@@ -1,9 +1,12 @@
- // Ex-12 where() – ADVENTURE MODE
-
- // Write a function where() that takes two inputs, a list of objects and
- // a properties object. It should return a new list containing only those
- // objects that meet the key-value conditions in the properties object.
-
+ /**
+  *  where()
+  *
+  * Write a function where() that takes two inputs, a list of objects and
+  * a properties object. It should return a new list containing only those
+  * objects that meet the key-value conditions in the properties object.
+  *
+  *
+ **/
 
 
 

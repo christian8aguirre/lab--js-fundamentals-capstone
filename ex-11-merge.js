@@ -1,15 +1,13 @@
-////------------------------------------------------------------------
-//  Ex-11 : `merge()`– ADVENTURE MODE
-//
-//  Write a function called `merge()` that takes two objects and
-//  returns a new object with their combined properties & values.
-//
-//  If the two objects have the same property, make sure that you
-//  return the property-values from the objecti in the 2nd argument
-//
-////------------------------------------------------------------------
-
-
+/**
+ *  merge()
+ *
+ *  Write a function called `merge()` that takes two objects and
+ *  returns a new object with their combined properties & values.
+ *
+ *  If the two objects have the same property, make sure that you
+ *  return the property-values from the object in the 2nd argument.
+ *
+**/
 
 
 
