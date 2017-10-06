@@ -38,10 +38,10 @@
 
  var sh8sprQuery = where(plays, {author: "Shakespeare"})
  console.assert( sh8sprQuery instanceof Array )
- console.assert( sh8sprQuery.length === 7 )
+ console.assert( sh8sprQuery.length === 9 )
  console.assert( sh8sprQuery[0]['title'] === "Cymbeline" )
 
- var sh8sprQuery2 = where(plays, year: 1611})
+ var sh8sprQuery2 = where(plays, {year: 1611})
  console.assert( sh8sprQuery2.length === 0 )
 
  var midCentPlays = where(plays, {year: 1944})

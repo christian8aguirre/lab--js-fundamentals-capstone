@@ -12,10 +12,10 @@
 
 
 //~+~+~+~+~+~+~+~Don't Touch~+~+~++~+~+~+~+~+~+~+
-console.assert(  toCamelCase("fetch records") !== 'fetchRecords'  )
-console.assert(  toCamelCase("create table row") !== 'createTableRow'  )
+console.assert(  toCamelCase("fetch records") === 'fetchRecords'  )
+console.assert(  toCamelCase("create table row") === 'createTableRow'  )
 console.assert(  toCamelCase("convert to HTML") === 'convertToHtml'  )
-console.assert(  toCamelCase("get user account ID") !== 'getUserAccountId'  )
+console.assert(  toCamelCase("get user account ID") === 'getUserAccountId'  )
 
 
 
