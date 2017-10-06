@@ -27,12 +27,35 @@ Let's see some bananas and nuts! This was a big get for God. They don't allow yo
 
 var wordFrequencyObject = getWordCount(sampleText)
 
+console.log("[1] Should return 3 for 'be'");
 console.assert( wordFrequencyObject.be === 3 )
-console.assert( wordFrequencyObject.need === 3 )
-console.assert( wordFrequencyObject.you === 9 )
+console.log("====================================");
+console.log();
 
-// EXPLORER MODE - PART 2 - Strip the Punctuatio
+console.log("[2] Should return 3 for 'need'");
+console.assert( wordFrequencyObject.need === 3 )
+console.log("====================================");
+console.log();
+
+console.log("[3] Should return 9 for 'you'");
+console.assert( wordFrequencyObject.you === 9 )
+console.log("====================================");
+console.log();
+
+
+// EXPLORER MODE - PART 2 - Strip the Punctuation
 //-----------------------------
+console.log("[4] Should return 4 for 'needy'");
 console.assert( wordFrequencyObject.needy === 4)
+console.log("====================================");
+console.log();
+
+console.log("[5] Should return 6 for 'caw'");
 console.assert( wordFrequencyObject.caw === 6)
+console.log("====================================");
+console.log();
+
+console.log("[6] Should return 2 for 'dead'");
 console.assert( wordFrequencyObject.dead === 2)
+console.log("====================================");
+console.log();

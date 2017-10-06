@@ -23,12 +23,30 @@ var obj2 = {id: 6288, balance: 38832, accountActive: true }
 
 var merged = merge(obj1, obj2)
 
+console.log("[1] Should return 'Shaman Tilroy'");
 console.assert(merged.name === "Shaman Tilroy")
-console.assert(merged.age === 33)
-console.assert(merged.id === 6288)
-console.assert(merged.balance === 38832)
-console.assert(merged.accountActive === true)
+console.log("============================================");
+console.log();
 
+console.log("[2] Should return 33");
+console.assert(merged.age === 33)
+console.log("============================================");
+console.log();
+
+console.log("[3] Should return 6288");
+console.assert(merged.id === 6288)
+console.log("============================================");
+console.log();
+
+console.log("[4] Should return 38832");
+console.assert(merged.balance === 38832)
+console.log("============================================");
+console.log();
+
+console.log("[5] Should return true");
+console.assert(merged.accountActive === true)
+console.log("============================================");
+console.log();
 
 // -------------------------------
 var obj3 = {title: "How to Wear a Bowtie", artist: "Showtime", released: 1984 }

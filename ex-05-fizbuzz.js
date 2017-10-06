@@ -19,12 +19,47 @@
  * For 3 returns fizz
  * Result: ..fizz
  */
+
+console.log("[1] Should return '..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ'");
 console.assert(fizzbuzz(1) === ".")
+console.log("====================================================================================================");
+console.log();
+
+console.log("[2] Should return '..")
 console.assert(fizzbuzz(2) === "..")
+console.log("====================================================================================================");
+console.log();
+
+console.log("[3] Should return '..fizz")
 console.assert(fizzbuzz(3) === "..fizz")
+console.log("====================================================================================================");
+console.log();
+
+console.log("[4] Should return '..fizz.buzz")
 console.assert(fizzbuzz(5) === "..fizz.buzz")
+console.log("====================================================================================================");
+console.log();
+
+console.log("[5] Should return '..fizz.buzzfizz..fizzbuzz")
 console.assert(fizzbuzz(10) === "..fizz.buzzfizz..fizzbuzz")
+console.log("====================================================================================================");
+console.log();
+
+console.log("[6] Should return '..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.")
 console.assert(fizzbuzz(19) === "..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.")
+console.log("====================================================================================================");
+console.log();
+
+console.log("[7] Should return '..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.buzz")
 console.assert(fizzbuzz(20) === "..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.buzz")
+console.log("====================================================================================================");
+console.log();
+
+console.log("[8] Should return '..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.buzzfizz..fizzbuzz.fizz")
 console.assert(fizzbuzz(27) === "..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.buzzfizz..fizzbuzz.fizz")
+console.log("====================================================================================================");
+console.log();
+
+console.log("[9] Should return '..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ")
 console.assert(fizzbuzz(30) === "..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ")
+console.log("====================================================================================================");

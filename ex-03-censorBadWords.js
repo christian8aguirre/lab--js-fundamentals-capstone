@@ -14,6 +14,16 @@ var censored1 = censorBadWords(badWords, "mom get the heck in here and bring me 
 var censored2 = censorBadWords(badWords, "here son, your crappy sandwich is on the dang plate")
 var censored3 = censorBadWords(badWords2, "your freaking idiot dog left crap on my floor")
 
+console.log("[1] Expected: 'mom get the **** in here and bring me a **** sandwich'");
 console.assert( censored1 === "mom get the **** in here and bring me a **** sandwich")
+console.log("=====================================================================");
+console.log();
+
+console.log("[2] Expected: 'here son, your **** sandwich is on the **** plate'");
 console.assert( censored2 === "here son, your **** sandwich is on the **** plate")
+console.log("=====================================================================");
+console.log();
+
+console.log("[3] Expected: 'your **** **** dog left **** on my floor'");
 console.assert( censored3 === "your **** **** dog left **** on my floor")
+console.log("=====================================================================");

@@ -36,9 +36,27 @@ var stats_2 =  showStats(56, parkingTicketsCount)
 console.log(stats_1)
 console.log(stats_2)
 
+console.log("[1] Should return a length of 39");
 console.assert( stats_1.inputArraySize === 39  );
-console.assert( stats_1.count_inputEqualTo === 6  ) ;
-console.assert( stats_1.count_inputGreaterThan === 19  ) ;
+console.log("===========================================");
+console.log();
 
+console.log("[2] Should return 6");
+console.assert( stats_1.count_inputEqualTo === 6  ) ;
+console.log("===========================================");
+console.log();
+
+console.log("[3] Should return 19");
+console.assert( stats_1.count_inputGreaterThan === 19  ) ;
+console.log("===========================================");
+console.log();
+
+console.log("[4] Should return 28");
 console.assert( stats_2.count_inputGreaterThan === 28 ) ;
+console.log("===========================================");
+console.log();
+
+console.log("[5] Should return 8");
 console.assert( stats_2.count_inputLessThan === 8 ) ;
+console.log("===========================================");
+console.log();

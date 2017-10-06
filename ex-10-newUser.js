@@ -24,14 +24,52 @@ var simpleUser = new User('jill88', 'visitor')
 var adminUser = new User('jack76', 'admin')
 var contentCreatorList = ['editor', 'admin']
 
+console.log("[1] Should return 'jill88'");
 console.assert(simpleUser.name === 'jill88')
-console.assert(simpleUser.role === 'visitor')
-console.assert(typeof simpleUser.createdAt === 'number' )
-console.assert(simpleUser.createdAt < Date.now() )
-console.assert(simpleUser.hasPermissions(contentCreatorList) === false )
+console.log("=======================================");
+console.log();
 
+console.log("[2] Should return 'visitor'");
+console.assert(simpleUser.role === 'visitor')
+console.log("=======================================");
+console.log();
+
+console.log("[3] Should return typeof 'number'");
+console.assert(typeof simpleUser.createdAt === 'number' )
+console.log("=======================================");
+console.log();
+
+console.log("[4] Should return true");
+console.assert(simpleUser.createdAt < Date.now() )
+console.log("=======================================");
+console.log();
+
+console.log("[5] Should return false for permissions");
+console.assert(simpleUser.hasPermissions(contentCreatorList) === false )
+console.log("=======================================");
+console.log();
+
+console.log("[6] Should return 'jack76'");
 console.assert(adminUser.name === 'jack76')
+console.log("=======================================");
+console.log();
+
+console.log("[7] Should return 'admin'");
 console.assert(adminUser.role === 'admin')
+console.log("=======================================");
+console.log();
+
+console.log("[8] Should return typeof 'number'");
 console.assert(typeof adminUser.createdAt === 'number' )
+console.log("=======================================");
+console.log();
+
+console.log("[9] Should return true");
 console.assert(adminUser.createdAt < Date.now() )
+console.log("=======================================");
+console.log();
+
+console.log("[10] Should return true for permissions");
 console.assert(simpleUser.hasPermissions(contentCreatorList) === true )
+console.log("=======================================");
+console.log();
