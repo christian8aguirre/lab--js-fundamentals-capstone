@@ -7,10 +7,10 @@
  *
 **/
 
-var badWordsList = ['heck', 'darn', 'dang', 'crappy', 'crud', 'crap', 'freaking']
+var badWords = ['heck', 'darn', 'dang', 'crappy', 'crud', 'crap', 'freaking']
 var badWords2 = ['idiot',  'crap', 'freaking']
 
-var censored1 = censorBadWords(badWords, "mom get the heck in here and bring me a darn sandwich"
+var censored1 = censorBadWords(badWords, "mom get the heck in here and bring me a darn sandwich")
 var censored2 = censorBadWords(badWords, "here son, your crappy sandwich is on the dang plate")
 var censored3 = censorBadWords(badWords2, "your freaking idiot dog left crap on my floor")
 
