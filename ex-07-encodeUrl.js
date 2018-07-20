@@ -47,6 +47,6 @@ console.log();
 
 var encodedURL4 = encodeURL("20% of $100")
 console.log("[4] Should return '20%25%20of%20%24100'")
-console.assert(encodedURL3 === "20%25%20of%20%24100")
+console.assert(encodedURL4 === "20%25%20of%20%24100")
 console.log("=================================================================================");
 console.log();
