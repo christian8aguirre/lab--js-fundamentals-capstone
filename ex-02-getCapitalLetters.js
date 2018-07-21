@@ -1,18 +1,20 @@
 /**
- * Ex-03: getCapitalLetters()
+ * Ex-02: getCapitalLetters()
  *
  * Write a function called getCapitalLetters()that returns
  * an array of all of the capital letters of a string
  *
 **/
 
-
-
-
-
-
-
-
+function getCapitalLetters(text) {
+    var capitalLetters =[];
+    for (let i = 0; i < text.length; i++) {
+        if(text[i] === text[i].toUpperCase() && text[i]!==" "){
+            capitalLetters.push(text[i]);
+        }
+    }
+    return capitalLetters;
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
@@ -48,9 +50,9 @@ console.log("[5] Should return 'X' in the 6th index");
 console.assert( output_2[6] === 'X' )
 console.log("=====================================");
 
-//Explorer Mode: Make these tests pass
-//---------------------
-// var output_3 = getCapitalLetters('TLDR; My mother gave Nancy nothing for Xmas.')
+// Explorer Mode: Make these tests pass
+// ---------------------
+var output_3 = getCapitalLetters('TLDR; My mother gave Nancy nothing for Xmas.')
 // console.assert( output_2.length === 7 )
 // console.assert( output_2[3] === 'R' )
 // console.assert( output_2[6] === 'X' )

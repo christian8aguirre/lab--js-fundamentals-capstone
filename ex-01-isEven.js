@@ -6,10 +6,13 @@
  *
 **/
 
-
-
-
-
+function isEven(number) {
+    if(number%2 === 0){
+        return true;
+    }else{
+        return false;
+    }
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 console.log("[1] Should return false for 1");

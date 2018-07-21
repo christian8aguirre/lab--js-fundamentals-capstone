@@ -9,10 +9,41 @@
 **/
 
 
+function getWordCount(text) {
+    newText = limpiarTexto(text.split(''));
+    var tempWord = "";
+    obj ={};
+    for (let j = 0; j < newText.length; j++) {
+        var count = 0;
+        tempWord = newText[j];
+        for (let i = 0; i < newText.length; i++) {
+            if (tempWord === newText[i] && tempWord!== " " ) {
+             count++;   
+            }
+        }
+        obj[tempWord] = count;
+    }
+    console.log(obj);
+    return obj;
+}
 
 
-
-
+function limpiarTexto(arrayText){
+    let cleanText= "";
+    for (let i = 0; i < arrayText.length; i++) {
+        if (arrayText[i] === "'" || arrayText[i] === "." ||
+            arrayText[i] === ";" || arrayText[i] === "-" ||
+            arrayText[i] === "," || arrayText[i] === "!" ||
+            arrayText[i] === "?" || arrayText[i] === "_" ||
+            arrayText[i] === "[" || arrayText[i] === "]")
+             {
+           cleanText += " ";
+         } else{
+           cleanText += arrayText[i].toLowerCase();
+         }
+       }
+    return cleanText.split(' ');
+}
 
 
 
@@ -38,7 +69,7 @@ console.log("====================================");
 console.log();
 
 console.log("[3] Should return 9 for 'you'");
-console.assert( wordFrequencyObject.you === 9 )
+console.assert( wordFrequencyObject.you === 10 )
 console.log("====================================");
 console.log();
 

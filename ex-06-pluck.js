@@ -9,6 +9,13 @@
  *
 **/
 
+function pluck(arraylist, prop) {
+    var array = [];
+    for (let i = 0; i < arraylist.length; i++) {       
+    array.push(arraylist[i][prop]);
+    }
+    return array;
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 

@@ -7,6 +7,20 @@
  *
 **/
 
+function censorBadWords(badWords, text) {
+    var tempText = text.split(" ");
+
+    for (let j = 0; j < tempText.length; j++) {
+        for (let i = 0; i < badWords.length; i++) {
+            if (tempText[j]=== badWords[i]) {
+                tempText[j] = "****";
+            }
+        }
+    }
+    tempText = tempText.join(" ");
+    return tempText;
+}
+
 var badWords = ['heck', 'darn', 'dang', 'crappy', 'crud', 'crap', 'freaking']
 var badWords2 = ['idiot',  'crap', 'freaking']
 

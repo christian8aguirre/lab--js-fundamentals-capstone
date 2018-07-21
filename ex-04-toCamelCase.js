@@ -7,9 +7,20 @@
  *
  */
 
-
-
-
+function toCamelCase(text) {
+    var tempText = text.split(" ");
+    var tempWord = [];
+    for (let i = 1; i < tempText.length; i++) {
+        tempWord = tempText[i].split('');
+        for (let j = 0; j < tempWord.length; j++) {
+        tempWord[j]=tempWord[j].toLowerCase();
+        }
+        tempWord[0]=tempWord[0].toUpperCase();
+        tempText[i] = tempWord.join('');
+    }
+    x = tempText.join('');    
+    return x;
+}
 
 //~+~+~+~+~+~+~+~Don't Touch~+~+~++~+~+~+~+~+~+~+
 console.log("[1] Should return 'fetchRecords'");
