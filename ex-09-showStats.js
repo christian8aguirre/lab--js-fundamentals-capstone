@@ -17,12 +17,26 @@
  *   }
 **/
 
-
-
-
-
-
-
+function showStats(number, array) {
+    var count_inputEqualTo = 0;
+    var count_inputGreaterThan = 0;
+    var count_inputLessThan = 0;
+    for (let i = 0; i < array.length; i++) {
+        if(number === array[i]) {
+            count_inputEqualTo++;
+        }else if(number < array[i]){
+            count_inputGreaterThan++;
+        }else if(number > array[i]){
+            count_inputLessThan++;
+        }
+    }
+    var obj = {};
+    obj.count_inputEqualTo = count_inputEqualTo;
+    obj.count_inputGreaterThan = count_inputGreaterThan;
+    obj.count_inputLessThan = count_inputLessThan;
+    obj.inputArraySize = array.length;
+    return obj;
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
@@ -46,17 +60,17 @@ console.assert( stats_1.count_inputEqualTo === 6  ) ;
 console.log("===========================================");
 console.log();
 
-console.log("[3] Should return 19");
-console.assert( stats_1.count_inputGreaterThan === 19  ) ;
+console.log("[3] Should return 14");
+console.assert( stats_1.count_inputGreaterThan === 14  ) ;
 console.log("===========================================");
 console.log();
 
-console.log("[4] Should return 28");
-console.assert( stats_2.count_inputGreaterThan === 28 ) ;
+console.log("[4] Should return 8");
+console.assert( stats_2.count_inputGreaterThan === 8 ) ;
 console.log("===========================================");
 console.log();
 
-console.log("[5] Should return 8");
-console.assert( stats_2.count_inputLessThan === 8 ) ;
+console.log("[5] Should return 28");
+console.assert( stats_2.count_inputLessThan === 28 ) ;
 console.log("===========================================");
 console.log();

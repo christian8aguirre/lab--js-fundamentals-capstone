@@ -8,12 +8,60 @@
   *
  **/
 
+function where(list, objTarget) {
+   var propertiesObjTarget = Object.keys(objTarget);
+   var flag=[];
+    var propiertiesList = [];
+    var tempObj = {};
+    var tempList = [];
+    var finalArray = [];
+
+    for (let k = 0; k < propertiesObjTarget.length; k++) { //Es la varible que me indicará si todos los elementos del objeto se encuentran en el principal
+        flag.push(false);
+    }
+
+    for (let j = 0; j < list.length; j++) { //recorre cada elemento(fila) del array(matriz) a buscar
+        propiertiesList = Object.keys(list[j]);
+        tempList = list[j];
+        flag = initialFlag(flag);
+        for (let i = 0; i < propiertiesList.length; i++) { //recorre las propiedades del objeto en el elemento (fila) del array   
+            tempObj = {};
+            tempObj[propiertiesList[i]] = tempList[propiertiesList[i]];
+            for (let x = 0; x < propertiesObjTarget.length; x++) { //Recorre y compara propied por propiedad entre el array principal y el que se va a buscar
+                if (propertiesObjTarget[x] === propiertiesList[i] &&  objTarget[propertiesObjTarget[x]] === tempList[propiertiesList[i]]) {
+                    flag[x]= true;       
+                }   
+            }
+        }
+        compareFlags(flag) ?  finalArray.push(list[j]): "" ; //Si todas las flags son true, agregalo al finalArray
+    }
+    return finalArray;
+}
 
 
+function initialFlag(array) { //Reinicializa el array flag
+    for(i = 0; i < array.length; i++){
+        array[i]=false;
+        }
+    return array;
+}
 
-
-
-
+function compareFlags(array){ //Hace la comparación de los resultados de la búsqueda
+    switch (array.length) {
+        case 1:
+        return array[0]
+            break;
+        case 2:
+        return array[0] && array[1]
+        break
+        case 3:
+        return array[0] && array[1] && array[2]
+        break;
+        default:
+        return false;
+            break;
+    }
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 

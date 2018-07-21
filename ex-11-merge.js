@@ -9,12 +9,20 @@
  *
 **/
 
+function merge(obj1, obj2) {
+    var arrayProp1 = Object.keys(obj1);
+    var arrayProp2 = Object.keys(obj2);
+    var objMerge = {};
 
-
-
-
-
-
+    for (let i = 0; i < arrayProp1.length; i++) {
+        objMerge[arrayProp1[i]]= obj1[arrayProp1[i]];
+    }
+    for (let i = 0; i < arrayProp2.length; i++) {
+        objMerge[arrayProp2[i]]= obj2[arrayProp2[i]];
+        
+    }
+    return objMerge;
+}
 
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

@@ -17,6 +17,20 @@
  *
 **/
 
+function User(name, role) {
+    this.name = name;
+    this.role = role;
+    this.createdAt = Date.now();
+    this.hasPermissions =function(array) {
+        var flag = false;
+        for (let i = 0; i < array.length; i++) {
+            if (role === array[i]) {
+                flag = true;
+            }
+        }
+        return flag;
+    }
+}
 
  //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
@@ -70,6 +84,6 @@ console.log("=======================================");
 console.log();
 
 console.log("[10] Should return true for permissions");
-console.assert(simpleUser.hasPermissions(contentCreatorList) === true )
+console.assert(adminUser.hasPermissions(contentCreatorList) === true )
 console.log("=======================================");
 console.log();
